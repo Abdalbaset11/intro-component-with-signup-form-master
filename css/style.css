@@ -7,6 +7,7 @@ body {
     background-color: hsl(0, 100%, 74%) ;
     font-family: 'Poppins', sans-serif;
 }
+<<<<<<< HEAD
 
 .container {
     padding: 50px;
@@ -90,3 +91,9 @@ p.attribution {
     text-align: center;
 }
 /* End Footer */
+=======
+div {
+    
+}
+/*End General Style  */
+>>>>>>> 5ebfce204264d0d212bad577d0d361993180693a
