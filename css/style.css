@@ -29,7 +29,7 @@ body {
 
 .register h1 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1;
 }
 
@@ -43,7 +43,8 @@ body {
     box-shadow: 0 6px 0 rgb(0, 0, 0, 0.1);
     font-size: 15px;
     font-weight: 600;
-    padding: 13px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .register .try-it-free  span {
@@ -60,9 +61,14 @@ body {
 }
 
 .form_register input {
-    padding: 23px;
-    font-size: 14px;
+    padding: 25px;
+    font-size: 13px;
     font-weight: 700;
+}
+
+.form_register input:focus {
+    border: 1px solid #888;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
 }
 
 .form_register button {
@@ -70,10 +76,11 @@ body {
     background-color: hsl(154, 59%, 51%);
     border-color: hsl(154, 59%, 51%);
     box-shadow: 0 -3px rgb(0, 0, 0, 0.1) inset;
-    padding: 13px;
+    padding: 15px;
     font-weight: 600;
     color: #f7f5f5;
-    margin-bottom: 7px
+    margin-bottom: 7px;
+    letter-spacing: 1px;
 }
 
 .form_register span {
@@ -85,6 +92,14 @@ body {
 .form_register span span {
     color: hsl(0, 100%, 74%);
 }
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    background-image: url(../images/icon-error.svg);
+}
+
+.invalid-feedback {
+    text-align: right;
+}
 /* End Register */
 
 /* Staert Footer */
@@ -92,4 +107,32 @@ p.attribution {
     text-align: center;
 }
 /* End Footer */
+
+/* Start esponsive */
+@media (max-width: 576px) {
+    .register .try-it-free-sm {
+        padding: 15px 30px;
+        font-size: 13px
+    }
+
+    .register .header-sm {
+        text-align: center;
+    }
+
+    .register .header-sm h1 {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .register .header-sm p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .register .header-sm {
+        text-align: center;
+    }
+}
+/* Start esponsive */
 >>>>>>> 5ebfce204264d0d212bad577d0d361993180693a
